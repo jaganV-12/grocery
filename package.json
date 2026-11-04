@@ -1,11 +1,21 @@
 {
-  "name": "voicebiz-ai",
+  "name": "voicebiz-server",
   "version": "1.0.0",
-  "private": true,
-  "description": "VoiceBiz AI - Voice-First Business Management for Indian Retailers",
+  "description": "VoiceBiz AI Backend API - Voice Business Management for Small Indian Businesses",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
-    "build": "cd client && npm install && npm run build",
-    "start": "node server/server.js"
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^8.5.2",
+    "morgan": "^1.10.0"
   }
 }
-
