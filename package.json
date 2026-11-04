@@ -1,0 +1,11 @@
+{
+  "name": "voicebiz-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "VoiceBiz AI - Voice-First Business Management for Indian Retailers",
+  "scripts": {
+    "build": "cd client && npm install && npm run build",
+    "start": "node server/server.js"
+  }
+}
+
